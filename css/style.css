@@ -18,6 +18,9 @@ box-sizing: inherit;
     --button-portfolio-color:#F5F4FA;
     --hero-fon-color:#2F303A;
     --card-set-gape: 30px;
+    --box-shadow-team:0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -161,8 +164,20 @@ color: var(--accent-color);
 .hero{
 padding: 200px 0px;
 text-align: center;
-background-color:var(--hero-fon-color);
+margin-right: auto;
+margin-left: auto;
+max-width: 1600px;
+min-height: 600px;
+outline: 1px solid black;
+background-image: linear-gradient(to right,
+rgba(47, 48, 58,0.4), 
+rgba(47, 48, 58, 0.4)),
+url(../images/background-hero.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
 }
+
 .hero-title{
 
 margin-top: 0px;
@@ -303,7 +318,7 @@ margin-top: var(--card-set-gape);
 
 /* контейнер TEAM */
 .team-section{
-background-color:var(--button-portfolio-color);
+background-color:var(--button-portfolio-color); 
 padding: 94px 0px;
 }
 
@@ -319,6 +334,7 @@ margin-left: calc(-1 * var(--card-set-gape));
 flex-basis: calc(100% / 3 - var(--card-set-gape));
 margin-left: var(--card-set-gape);
 margin-top: var(--card-set-gape);
+box-shadow: var(--box-shadow-team);
 }
 
 .team-title{
@@ -398,6 +414,7 @@ font-size: 16px;
 line-height: 1.6;
 letter-spacing: 0.03em;
 text-decoration: none;
+box-shadow: var(--box-shadow-team);
 }
 
 .button.primary:hover,
@@ -412,10 +429,15 @@ font-size: 16px;
 line-height: 1.6;
 letter-spacing: 0.03em;
 text-decoration: none;
+box-shadow: var(--box-shadow-team);
 }
 
 
 /* сетка для разметки 2 строки и более.. */
+
+.benefits > .item:hover{
+box-shadow: var(--box-shadow-team)
+}
 
 .benefits {
 display: flex;
@@ -430,6 +452,81 @@ margin-left:var(--card-set-gape);
 margin-top:var(--card-set-gape);
 
 }
+.benefits .item:nth-child(1){
+background-color: var(--primery-white-color);
+background-image: url(../images/img1.jpg);
+background-repeat:no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+
+.benefits .item:nth-child(2) 
+{
+background-color: var(--primery-white-color);
+background-image: url(../images/img2.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+.benefits .item:nth-child(3) 
+{
+background-color: var(--primery-white-color);
+background-image: url(../images/img3.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+.benefits .item:nth-child(4) 
+{
+background-color: var(--primery-white-color);
+background-image: url(../images/img4.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+.benefits .item:nth-child(5) 
+{
+background-color: var(--primery-white-color);
+background-image: url(../images/img5.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+.benefits .item:nth-child(6) 
+{
+    background-color: var(--primery-white-color);
+    background-image: url(../images/img6.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    /* background-size: 50%; */
+}
+
+.benefits .item:nth-child(7) 
+{
+background-color: var(--primery-white-color);
+background-image: url(../images/img7.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+
+.benefits .item:nth-child(8) 
+{
+background-color: var(--primery-white-color);
+background-image: url(../images/img8.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+
+.benefits .item:nth-child(9) {
+background-color: var(--primery-white-color);
+background-image: url(../images/img9.jpg);
+background-repeat: no-repeat;
+/* background-position: center; */
+/* background-size: 50%; */
+}
+
 
 /* рамки и отступы внутри них */
 
