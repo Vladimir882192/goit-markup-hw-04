@@ -420,15 +420,6 @@ border-radius: 50%;
 fill: #AFB1B8;
 } 
 
-.social-icon.current{
-display: inline-block;
-height: 44px;
-width: 44px;
-margin-right:10px ;
-padding: 12px;
-border-radius: 50%;
-fill: #fff;
-} 
 .icon-inst,
 .icon-twitter,
 .icon-facebook,
