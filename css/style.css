@@ -399,7 +399,7 @@ text-align: center;
 padding: 10px 0px 16px ;
 }
 
-/* Добавление иконок соц.сети */
+/* Добавление иконок соц.сети в team */
 .social-title{
 height: 44px;
 width: 206px;
@@ -414,11 +414,18 @@ justify-content: center;
 display: inline-block;
 height: 44px;
 width: 44px;
-margin-right:10px ;
+
 padding: 12px;
 border-radius: 50%;
 fill: #AFB1B8;
 } 
+.social-title>.item{
+margin-right:10px ;
+}
+.social-title>.item:nth-child(4n){
+margin-right: 0px;
+}
+
 
 .icon-inst,
 .icon-twitter,
@@ -438,13 +445,8 @@ width: 20px;
     fill:#FFFFFF;
     background-color: var(--accent-color);
     } 
-
-
-
-
-
-
-
+    
+    
 
 
 
