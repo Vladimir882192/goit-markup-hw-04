@@ -286,32 +286,37 @@ margin: -1px;
 /* контейнер FEATURE */
 
 /* установка иконок */
-
-.feature >.item::before {
-display: block;
-content: "";
+.button-feature{
+width: 270px;
 height: 120px;
-/* outline: 1px solid tomato; */
-background-repeat: no-repeat;
-background-position: center;
-background-size: auto;
 margin-bottom: 30px;
-background-color: var(--button-portfolio-color);
+padding: 25px 100px;
+}
+.button-feature .icon{
+height: 70px;
+width: 70px;
 }
 
+/* .link-social{
+display: block;
+align-items: center;
+height: 44px;
+width: 206px;
+margin: 0px;
+padding: 0px;
+text-decoration: none;
+background-color: tomato;
+}
 
-.icon-antena::before{
-background-image: url(../images/antenna\ 1.svg)
-}
-.icon-clock::before{
-background-image: url(../images/clock\ 1.svg);
-}
-.icon-diagram::before{
-background-image: url(../images/diagram\ 1.svg);}
+.link-social .icon{
+height: 44px;
+width: 44px;
+margin-bottom: 10px;
+} */
 
-.icon-astrount::before{
-background-image: url(../images/astronaut\ 1.svg);
-}
+
+
+
 
 
 .feature {
@@ -410,13 +415,42 @@ margin-top: 10px;
 text-align: center;
 }
 .team .card-thumb{
-padding: 30px 0px ;
+padding: 10px 0px 16px ;
+}
+
+/* Добавление иконок соц.сети */
+.social-title{
+height: 44px;
+width: 206px;
+display: flex;
+margin-left: 32px;
+margin-right: 32px;
+margin-bottom: 30px;
+align-items: center;
+justify-content: center;
+}
+.social-icon{
+display: inline-block;
+height: 44px;
+width: 44px;
+margin-right:10px ;
+padding: 12px;
+border-radius: 50%;
+/* background-color: #188CE8; */
+} 
+
+.icon-inst,
+.icon-twitter,
+.icon-facebook,
+.icon-ln{
+height: 20px;
+width: 20px;
 }
 
 
-
-
 /* секция Постоянные клиенты */
+
+
 
 .customers-section{
 padding: 94px 0px;
