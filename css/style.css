@@ -139,6 +139,7 @@ color:var(--accent-color);
 display: flex;
 margin-left: auto;
 align-items: center;
+justify-content: center;
 }
 
 .auth-nav .item:not(:last-child){
@@ -297,26 +298,6 @@ height: 70px;
 width: 70px;
 }
 
-/* .link-social{
-display: block;
-align-items: center;
-height: 44px;
-width: 206px;
-margin: 0px;
-padding: 0px;
-text-decoration: none;
-background-color: tomato;
-}
-
-.link-social .icon{
-height: 44px;
-width: 44px;
-margin-bottom: 10px;
-} */
-
-
-
-
 
 
 .feature {
@@ -436,9 +417,18 @@ width: 44px;
 margin-right:10px ;
 padding: 12px;
 border-radius: 50%;
-/* background-color: #188CE8; */
+fill: #AFB1B8;
 } 
 
+.social-icon.current{
+display: inline-block;
+height: 44px;
+width: 44px;
+margin-right:10px ;
+padding: 12px;
+border-radius: 50%;
+fill: #fff;
+} 
 .icon-inst,
 .icon-twitter,
 .icon-facebook,
@@ -446,6 +436,25 @@ border-radius: 50%;
 height: 20px;
 width: 20px;
 }
+
+.social-icon:hover{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    margin-right:10px ;
+    padding: 12px;
+    border-radius: 50%;
+    fill:#FFFFFF;
+    background-color: var(--accent-color);
+    } 
+
+
+
+
+
+
+
+
 
 
 /* секция Постоянные клиенты */
