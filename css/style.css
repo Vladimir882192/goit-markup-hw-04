@@ -151,13 +151,20 @@ margin-right: 50px;
 height: 12px;
 width: 16px;
 margin-right: 10px;
+fill: #757575;
+}
+.icon-envelope:hover{
+fill:var(--accent-color)
 }
 .icon-smartfhone{
 height: 16px;
 width: 10px;
 margin-right: 10px;
+fill: #757575;
 }
-
+.icon-smartfhone:hover{
+fill:var(--accent-color)
+}
 
 
 /* text  */
@@ -291,7 +298,9 @@ background-size: auto;
 margin-bottom: 30px;
 background-color: var(--button-portfolio-color);
 }
-.icon-antenna::before{
+
+
+.icon-antena::before{
 background-image: url(../images/antenna\ 1.svg)
 }
 .icon-clock::before{
