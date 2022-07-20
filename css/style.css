@@ -568,7 +568,7 @@ box-shadow: var(--box-shadow-team);
 
 /* сетка для разметки 2 строки и более.. */
 
-.benefits > .item:hover{
+.benefits >.item:hover{
 box-shadow: var(--box-shadow-team)
 }
 
@@ -691,26 +691,41 @@ color: var(--accent-color);
 }
 
 
-.footer-title{
-color:var(--primery-white-color);
+/* добавление второй части футера */
+
+/* титулка футера */
+.footer-title {
+color: var(--primery-white-color);
 font-weight: 700;
 font-size: 14px;
-line-height: 1.14px; 
+line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 font-style: normal;
-margin-bottom: 20px;
 }
 
+/* общий div футера */
 
-.social-footer {
+.contact-info {
+display: flex;
+margin-right: auto;
+}
+
+/* div второй части футера */
+.footer-part{
 height: 80px;
 width: 206px;
-display: flex;
-align-items: center;
-justify-content: center;
-
+margin-left: 70px;
 }
+
+/* список для div второй части футера */
+.social-footer {
+margin-top: 20px;
+display: flex;
+text-decoration: none;
+}
+
+/* коррекция иконок footer*/
 
 .footer-icon {
 display: inline-block;
