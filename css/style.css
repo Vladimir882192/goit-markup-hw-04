@@ -152,20 +152,19 @@ margin-right: 50px;
 height: 12px;
 width: 16px;
 margin-right: 10px;
-fill: #757575;
+
 }
 
 .icon-smartfhone{
 height: 16px;
 width: 10px;
 margin-right: 10px;
-fill: #757575;
 }
 
 
 
 /* text  */
-.auth-nav .link{
+.auth-nav .link-info{
 color: var(--primery-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -174,8 +173,9 @@ letter-spacing: 0.02em;
 text-decoration: none;
 }
 
-.auth-nav .link:hover, 
-.auth-nav .link:focus{
+
+.auth-nav .link-info:hover, 
+.auth-nav .link-info:focus{
 color: var(--accent-color);
 fill: var(--accent-color);
 }
@@ -474,21 +474,20 @@ height: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+fill:#afb1b8 ;
 border: 1px solid #AFB1B8;
 }
 
-
-.icon-costumers.fourth{
-fill:#2196f3 ;
-height: 60px;
-width: 106px;    
+.link-costumers:hover,
+.link-costumers:focus{
+border: 1px solid var(--accent-color);
+fill: var(--accent-color);
 }
 
 
 .icon-costumers{
 height: 60px;
 width: 106px;
-fill: #afb1b8;
 }
 
 
@@ -571,9 +570,7 @@ box-shadow: var(--box-shadow-team);
 
 /* сетка для разметки 2 строки и более.. */
 
-.benefits >.item:hover{
-box-shadow: var(--box-shadow-team)
-}
+
 
 .benefits {
 display: flex;
@@ -588,9 +585,19 @@ margin-left:var(--card-set-gape);
 margin-top:var(--card-set-gape);
 
 }
+/* эффект тени на ховер */
+.card-shadow{
+display: block;
+text-decoration: none;
+}
+
+.card-shadow:hover{
+box-shadow: var(--box-shadow-team);
+}
 
 
 /* рамки и отступы внутри них */
+
 
 .benefits .card-thumb{
 padding: 20px 24px;
@@ -705,16 +712,17 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 font-style: normal;
+margin-bottom: 20px;
 }
 
 /* общий div футера */
 
 .contact-info {
 display: flex;
-margin-right: auto;
+align-items: baseline;
 }
 
-/* div второй части футера */
+/* div размер контейнера второй части футера */
 .footer-part{
 height: 80px;
 width: 206px;
@@ -722,19 +730,35 @@ margin-left: 70px;
 }
 
 /* список для div второй части футера */
+/* ul 2 части */
 .social-footer {
-margin-top: 20px;
 display: flex;
-text-decoration: none;
+align-items: center;
+justify-content: center;
+}
+/* расст внутри иконок */
+.social-footer>.item {
+margin-right: 10px;}
+    
+.social-footer>.item:nth-child(4n) {
+margin-right: 0px;
+}
+    
+/*иконки  */
+.icon-footer{
+height: 20px;
+width: 20px;
+fill: var(--primery-white-color)
 }
 
-/* коррекция иконок footer*/
+/* коррекция иконок footer ccылки*/
 
 .footer-icon {
-display: inline-block;
+display: flex;
+align-items: center;
+justify-content: center;
 height: 44px;
 width: 44px;
-padding: 12px;
 border-radius: 50%;
 background-color: rgba(255, 255, 255, 0.1);
 /* fill: var(--primery-white-color); */
@@ -742,32 +766,11 @@ background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-icon.current{
-display: inline-block;
-height: 44px;
-width: 44px;
-padding: 12px;
-border-radius: 50%;
 background-color: var(--accent-color);
 
 }
 
-.social-footer>.item {
-margin-right: 10px;
-}
 
-.social-footer>.item:nth-child(4n) {
-margin-right: 0px;
-}
-
-
-.icon-inst.footer,
-.icon-twitter.footer,
-.icon-facebook.footer,
-.icon-ln.footer {
-height: 20px;
-width: 20px;
-fill: var(--primery-white-color)
-}
 
 
 
