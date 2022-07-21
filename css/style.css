@@ -154,18 +154,14 @@ width: 16px;
 margin-right: 10px;
 fill: #757575;
 }
-.icon-envelope:hover{
-fill:var(--accent-color)
-}
+
 .icon-smartfhone{
 height: 16px;
 width: 10px;
 margin-right: 10px;
 fill: #757575;
 }
-.icon-smartfhone:hover{
-fill:var(--accent-color)
-}
+
 
 
 /* text  */
@@ -181,6 +177,7 @@ text-decoration: none;
 .auth-nav .link:hover, 
 .auth-nav .link:focus{
 color: var(--accent-color);
+fill: var(--accent-color);
 }
 
 
@@ -200,7 +197,7 @@ rgba(47, 48, 58, 0.4)),
 url(../images/background-hero.jpg);
 background-repeat: no-repeat;
 background-position: center;
-background-size: contain;
+background-size: cover;
 }
 
 .hero-title{
@@ -287,13 +284,16 @@ margin: -1px;
 /* контейнер FEATURE */
 
 /* установка иконок */
-.button-feature{
-width: 270px;
+.icon-feature{
+display: flex;
+justify-content: center;
+align-items: center;
 height: 120px;
+background-color: var(--button-portfolio-color);
+border-radius: 4px;
 margin-bottom: 30px;
-padding: 25px 100px;
 }
-.button-feature .icon{
+.icon-feature .icon{
 height: 70px;
 width: 70px;
 }
@@ -393,29 +393,26 @@ font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 margin-top: 10px;
+margin-bottom: 16px;
 text-align: center;
 }
 .team .card-thumb{
-padding: 10px 0px 16px ;
+padding: 30px 0px ;
 }
 
 /* Добавление иконок соц.сети в team */
 .social-title{
-height: 44px;
-width: 206px;
 display: flex;
-margin-left: 32px;
-margin-right: 32px;
-margin-bottom: 30px;
 align-items: center;
 justify-content: center;
 }
 .social-icon{
-display: inline-block;
+display: flex;
+align-items: center;
+justify-content: center;
 height: 44px;
 width: 44px;
 
-padding: 12px;
 border-radius: 50%;
 fill: #AFB1B8;
 } 
@@ -437,15 +434,9 @@ width: 20px;
 
 .social-icon:hover,
 .social-icon:focus{
-    display: inline-block;
-    height: 44px;
-    width: 44px;
-    margin-right:10px ;
-    padding: 12px;
-    border-radius: 50%;
-    fill:#FFFFFF;
-    background-color: var(--accent-color);
-    } 
+fill:#FFFFFF;
+background-color: var(--accent-color);
+} 
     
     
 
@@ -468,12 +459,7 @@ margin-left: calc(-1 * var(--card-set-gape));
 flex-basis: calc(100% / 3 - var(--card-set-gape));
 margin-left: var(--card-set-gape);
 margin-top: var(--card-set-gape);
-padding: 16px 32px;
-border:1px solid #AFB1B8;
-}
-
-.customers>.item:hover{
-border:1px solid#2196F3;
+height: 92px;
 }
 
 .link{
@@ -481,14 +467,31 @@ text-decoration: none;
 margin: 0px;
 padding: 0px;
 }
+
+.link-costumers{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 1px solid #AFB1B8;
+}
+
+
+.icon-costumers.fourth{
+fill:#2196f3 ;
+height: 60px;
+width: 106px;    
+}
+
+
 .icon-costumers{
 height: 60px;
 width: 106px;
 fill: #afb1b8;
 }
-.icon-costumers:hover{
-fill: var(--accent-color);
-}
+
+
 
 /* Макет Портфолио */
 
