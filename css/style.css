@@ -165,6 +165,8 @@ margin-right: 10px;
 
 /* text  */
 .auth-nav .link-info{
+display: flex;
+align-items: center;
 color: var(--primery-text-color);
 font-weight: 500;
 font-size: 14px;
@@ -397,7 +399,7 @@ margin-bottom: 16px;
 text-align: center;
 }
 .team .card-thumb{
-padding: 30px 0px ;
+padding: 30px 0px;
 }
 
 /* Добавление иконок соц.сети в team */
@@ -412,7 +414,6 @@ align-items: center;
 justify-content: center;
 height: 44px;
 width: 44px;
-
 border-radius: 50%;
 fill: #AFB1B8;
 } 
@@ -591,7 +592,8 @@ display: block;
 text-decoration: none;
 }
 
-.card-shadow:hover{
+.card-shadow:hover,
+.card-shadow:focus{
 box-shadow: var(--box-shadow-team);
 }
 
@@ -744,12 +746,7 @@ margin-right: 10px;}
 margin-right: 0px;
 }
     
-/*иконки  */
-.icon-footer{
-height: 20px;
-width: 20px;
-fill: var(--primery-white-color)
-}
+
 
 /* коррекция иконок footer ccылки*/
 
@@ -770,7 +767,12 @@ background-color: var(--accent-color);
 
 }
 
-
+/*иконки  */
+.icon-footer{
+    height: 20px;
+    width: 20px;
+    fill: var(--primery-white-color)
+    }
 
 
 
