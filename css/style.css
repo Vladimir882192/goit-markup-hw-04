@@ -21,6 +21,9 @@ box-sizing: inherit;
     --box-shadow-team:0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+    --box-shadow-benefits:0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -159,6 +162,7 @@ margin-right: 10px;
 height: 16px;
 width: 10px;
 margin-right: 10px;
+
 }
 
 
@@ -168,6 +172,7 @@ margin-right: 10px;
 display: flex;
 align-items: center;
 color: var(--primery-text-color);
+fill: var(--primery-text-color);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -191,7 +196,6 @@ margin-right: auto;
 margin-left: auto;
 max-width: 1600px;
 min-height: 600px;
-outline: 1px solid black;
 background-color: var(--hero-fon-color);
 background-image: linear-gradient(to right,
 rgba(47, 48, 58,0.4), 
@@ -477,6 +481,7 @@ align-items: center;
 justify-content: center;
 fill:#afb1b8 ;
 border: 1px solid #AFB1B8;
+border-radius: 4px;
 }
 
 .link-costumers:hover,
@@ -594,7 +599,7 @@ text-decoration: none;
 
 .card-shadow:hover,
 .card-shadow:focus{
-box-shadow: var(--box-shadow-team);
+box-shadow:var(--box-shadow-benefits);
 }
 
 
@@ -726,8 +731,6 @@ align-items: baseline;
 
 /* div размер контейнера второй части футера */
 .footer-part{
-height: 80px;
-width: 206px;
 margin-left: 70px;
 }
 
@@ -762,9 +765,9 @@ background-color: rgba(255, 255, 255, 0.1);
 
 }
 
-.footer-icon.current{
+.footer-icon:hover,
+.footer-icon:focus{
 background-color: var(--accent-color);
-
 }
 
 /*иконки  */
