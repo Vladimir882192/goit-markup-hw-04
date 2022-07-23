@@ -575,13 +575,13 @@ box-shadow: var(--box-shadow-team);
 
 
 /* сетка для разметки 2 строки и более.. */
-
+/* primer */
 /* .benefits {
 display: flex;
 flex-wrap: wrap;
 margin-top: -(minus) znachenie 1 otstupa vverh (margina)/2;
 margin-left: -(minus) znachenie 1 otstupa vlevo (margina)/2;} 
-gde margin top i left=gape (top left) */
+gde margin top i left=gap (top left) */
 
 /* .benefits>.item { */
 /* flex-basis: calc(100%-n(px) / p);
@@ -592,6 +592,18 @@ gde margin top i left=gape (top left) */
 /* n(kol-vo otstupov*znachenie margina (px)) */ 
 /* p-kol-vo stolbikov */
 
+/* .benefits{
+display: flex;
+flex-wrap: wrap;
+esli odinakovo to prosto gap:
+row-gap: 40px;
+column-gap: 30px;
+}
+.benefits> .item{
+flex-basis: calc((100% - 60px)/3);
+} */
+
+/* сетка для разметки 2 строки и более.. */
 .benefits {
 display: flex;
 flex-wrap: wrap;
